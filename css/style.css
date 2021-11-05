@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendario {
+    background-color: #fff;
+    width: 80%;
+    height: 80vh;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: auto;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.titulo {
+    background: #ED213A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    height: 80%;
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    height: 100%;
+}
+
+.linha-semana {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.fim-semana {
+    color: #f00;
+    font-weight: 900;
+}
+
+.hoje {
+    color: #005;
+    background-color: #ff0;
+    font-weight: 900;
+}
+
